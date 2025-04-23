@@ -1,0 +1,42 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\zombies\agrunt/agrunt_h_D"
+	"$bumpmap" "models\zombies\agrunt/agrunt_h_N"
+	
+	"$model" 1
+
+	"$surfaceprop" "alienflesh"
+        "$lightwarptexture" "models\zombies\agrunt\Base_M_caucasian_wrp"
+
+        "$halflambert" "1"
+	"$multipass" 0
+
+	"$envmap" "env_cubemap"
+	"$basealphaenvmapmask" "0"
+	"$envmaptint" "[.06 .05 .0]"
+
+// -- From here down is new stuff which will only be applied if $phong is set to 1 --
+	"$phong" "1"
+	"$phongboost" "3"
+//	"$phongexponenttexture" "Models/vortigaunt/vortigaunt_exponent"
+        "$phongexponent" "5"
+	"$phongalbedotint" "1"
+	"$phongfresnelranges" "[.18 .4 1]"
+	"$nodecal" "1"
+
+// Rim lighting parameters
+	"$rimlight" "1"				// To enable rim lighting (requires phong)
+	"$rimlightexponent" "10"             // Exponent for phong component of rim lighting
+	"$rimlightboost" ".3"	               // Boost for ambient cube component of rim lighting
+
+		$detail "models/zombies/agrunt/bms_bloodsplatterFloor_001b.vtf"
+	$detailscale 5
+	$detailblendfactor 0.0
+	$detailblendmode 0
+	Proxies
+	{
+		ModelDetailFx
+		{
+		}
+	}
+}
