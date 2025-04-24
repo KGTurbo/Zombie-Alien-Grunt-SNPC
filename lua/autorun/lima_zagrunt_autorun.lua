@@ -70,34 +70,25 @@ AddSd("npc_zombie_alien_grunt.Breath", {l=65,p=100,v=0.7,c=CHAN_AUTO}, {
 })
 
 AddSd("npc_zombie_alien_grunt.Jump", {l=75,p=100,v=0.9,c=CHAN_VOICE}, {
-"npc/zombie_alien_grunt/jump.wav",
+"npc/zombie_alien_grunt/jump_1.wav",
 })
 
 AddSd("npc_zombie_alien_grunt.Land", {l=75,p=100,v=0.9,c=CHAN_VOICE}, {
-"npc/zombie_alien_grunt/land.wav",
+"npc/zombie_alien_grunt/land_1.wav",
 })
 
-AddSd("npc_zombie_alien_grunt.LandThud", {l=85,p=100,v=0.9,c=CHAN_BODY}, {
-"npc/zombie_alien_grunt/step_6_new.wav",
-"npc/zombie_alien_grunt/step_7_new.wav",
-"npc/zombie_alien_grunt/step_8_new.wav",
+AddSd("npc_zombie_alien_grunt.LandThud", {l=80,p=100,v=0.5,c=CHAN_BODY}, {
+"npc/zombie_alien_grunt/land1.wav",
 })
 
-AddSd("npc_zombie_alien_grunt.StepR", {l=65,p={98,102},v=0.7,c=CHAN_BODY}, {
-"npc/zombie_alien_grunt/step_1.wav",
-"npc/zombie_alien_grunt/step_2.wav",
-"npc/zombie_alien_grunt/step_3.wav",
-"npc/zombie_alien_grunt/step_6_new.wav",
-"npc/zombie_alien_grunt/step_7_new.wav",
+AddSd("npc_zombie_alien_grunt.StepR", {l=60,p={98,102},v=0.5,c=CHAN_BODY}, {
+"npc/zombie_alien_grunt/step1.wav",
+"npc/zombie_alien_grunt/step2.wav",
 })
 
 AddSd("npc_zombie_alien_grunt.StepL", {l=65,p={98,102},v=0.7,c=CHAN_BODY}, {
-"npc/zombie_alien_grunt/step_4.wav",
-"npc/zombie_alien_grunt/step_5.wav",
-"npc/zombie_alien_grunt/step_3.wav",
-"npc/zombie_alien_grunt/step_8_new.wav",
-"npc/zombie_alien_grunt/step_9_new.wav",
-"npc/zombie_alien_grunt/step_10_new.wav",
+"npc/zombie_alien_grunt/step3.wav",
+"npc/zombie_alien_grunt/step4.wav",
 })
 ---
 
