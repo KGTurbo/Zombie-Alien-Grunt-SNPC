@@ -296,9 +296,9 @@ local ene = self:GetEnemy()
 
 if IsValid(ene) && self:Visible(ene) && !self:CurrentlyBusy() && self.ChargeState == 0 then
 self:SetIdealYawAndUpdate((ene:GetPos() - self:GetPos()):Angle().y,15)
-if GetConVar("sv_enable_zombie_grunt_dodging"):GetBool() == true && self:HasCondition(COND.HAVE_ENEMY_LOS) && IsValid(ene:GetActiveWeapon()) && ene:GetActiveWeapon():GetHoldType() != "melee" && ene:GetActiveWeapon():GetHoldType() != "grenade" 
+if GetConVar("sv_enable_zombie_grunt_dodging"):GetBool() == true && ene:IsPlayer() && self:HasCondition(COND.HAVE_ENEMY_LOS) && IsValid(ene:GetActiveWeapon()) && ene:GetActiveWeapon():GetHoldType() != "melee" && ene:GetActiveWeapon():GetHoldType() != "grenade" 
 && ene:GetActiveWeapon():GetHoldType() != "normal" && ene:GetActiveWeapon():GetHoldType() != "knife" && ene:GetActiveWeapon():GetHoldType() != "camera" &&
- self:IsEneAttacking(ene) && CurTime() > self.NextDodgeT && self:GetPos():Distance(ene:GetPos()) > 400 && ene:IsPlayer() then
+ self:IsEneAttacking(ene) && CurTime() > self.NextDodgeT && self:GetPos():Distance(ene:GetPos()) > 400 then
 self.NextDodgeT = CurTime() + 1
 local dodge = self:DecideDodge()
  if dodge then 
