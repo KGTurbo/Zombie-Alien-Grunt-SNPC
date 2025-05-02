@@ -21,7 +21,7 @@
 //	"$phongexponenttexture" "Models/vortigaunt/vortigaunt_exponent"
         "$phongexponent" "5"
 	"$phongalbedotint" "1"
-	"$phongfresnelranges" "[.18 .4 1]"
+	"$phongfresnelranges" "[.1 .1 .1]"
 	"$nodecal" "1"
 
 // Rim lighting parameters
